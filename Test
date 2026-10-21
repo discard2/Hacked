@@ -1,0 +1,18 @@
+--DanceScript  -  Make an NPC dance.   ScottSpiritWalker, 12/30/2024.
+ 
+local Npc = script.Parent
+local NpcHumanoid = Npc:WaitForChild("Humanoid")
+local NpcAnimator = NpcHumanoid:FindFirstChild("Animator") or NpcHumanoid
+ 
+local anim = Instance.new("Animation")
+anim.AnimationId = "rbxassetid://121924019901219"   --15609995579 is Yungblud Happier Jump AnimationId not AssetId.
+local loadedAnim = NpcAnimator:LoadAnimation(anim)
+loadedAnim.Looped = true
+loadedAnim:Play()
+ 
+ 
+ 
+ 
+ 
+ 
+ 
